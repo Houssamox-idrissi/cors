@@ -1,0 +1,24 @@
+/* CSS for the table */
+.table-auto {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.table-auto th,
+.table-auto td {
+  padding: 4px;
+  border: 1px solid whitesmoke; /* Use your desired border color */
+}
+
+.table-auto th {
+  background-color: #333; /* Header background color */
+  color: #fff; /* Header text color */
+}
+
+.table-auto tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background color */
+}
+
+.table-auto tbody tr:hover {
+  background-color: #ddd; /* Hovered row background color */
+}

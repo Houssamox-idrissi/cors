@@ -1,0 +1,117 @@
+/* src/Calendar.css */
+
+/* Basic container styling */
+.calendar-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize FullCalendar header */
+.fc .fc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.fc .fc-toolbar h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.fc .fc-toolbar button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fc .fc-toolbar button:hover {
+  background-color: #0056b3;
+}
+
+/* Customize the calendar grid */
+.fc .fc-col-header-cell {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+}
+
+.fc .fc-daygrid-day {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.fc .fc-daygrid-day:hover {
+  background-color: #efefef;
+}
+
+/* Highlight unavailable days */
+.unavailable-day {
+  background-color: rgb(243, 243, 243) !important;
+}
+
+.unavailable-day:hover {
+  background-color: red !important;
+}
+
+/* Highlight selected days */
+.selected-day {
+  background-color: green !important;
+}
+
+/* Event styling */
+.fc .fc-event {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.fc .fc-event:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Reservation form styling */
+.reservation-form {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 1000;
+  width: 300px;
+}
+
+.reservation-form h2 {
+  margin-top: 0;
+}
+
+.reservation-form form div {
+  margin-bottom: 10px;
+}
+
+.reservation-form form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reservation-form form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
